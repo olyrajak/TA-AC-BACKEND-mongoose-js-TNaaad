@@ -9,4 +9,6 @@ var userSchema = new Schema({
 }, {
     timestamps: true
 });
-module.exports = mongoose.model("User", userSchema);
+
+var user = mongoose.model("User", userSchema);
+module.exports = user;
