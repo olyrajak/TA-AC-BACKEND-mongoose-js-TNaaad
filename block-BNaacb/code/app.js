@@ -3,7 +3,7 @@ const logger = require('morgan')
 
 const mongoose = require('mongoose')
 
-mongoose.connect("mongodb://localhost/sample", (err) => {
+mongoose.connect("mongodb://localhost/article", (err) => {
     if (err) {
         console.log(err)
     } else {
