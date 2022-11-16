@@ -68,12 +68,19 @@ app.put("/users/:id", (req, res) => {
 });
 
 app.delete("/users/:id", (req, res) => {
+    
     let id = req.params.id;
+    
     User.findByIdAndDelete(id, (err, users) => {
+        
         console.log(err);
+        
         res.json(users);
+        
     });
 });
 app.listen(3800, () => {
+    
     console.log('Server is running on port 3800');
+    
 });
